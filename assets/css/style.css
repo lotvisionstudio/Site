@@ -86,6 +86,12 @@ body {
     width: auto;
 }
 
+.logo:hover {
+    transition: transform 0.6s cubic-bezier(0.25, 0.1, 0.25, 1);
+    transform: scale(1.2);
+    color: #ff6b35;
+    
+}
 .nav {
     display: flex;
     gap: 30px;
