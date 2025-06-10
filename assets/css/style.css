@@ -656,6 +656,9 @@ a.contact-item {
   text-decoration: none; /* Remove o sublinhado */
   color: inherit; /* Mantém a cor original do texto */
 }
+a.contact-item:hover {
+  text-decoration: none; /* Garante que não sublinhe ao passar o mouse */
+}
 .contact-form.animate {
     opacity: 1;
     transform: translateX(0);
