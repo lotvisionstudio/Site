@@ -651,7 +651,11 @@ model-viewer {
     transform: translateX(-50px);
     transition: all 0.8s ease;
 }
-
+a.contact-item {
+  display: flex;
+  text-decoration: none; /* Remove o sublinhado */
+  color: inherit; /* Mantém a cor original do texto */
+}
 .contact-form.animate {
     opacity: 1;
     transform: translateX(0);
