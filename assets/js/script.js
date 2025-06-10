@@ -539,6 +539,16 @@ function initializeInteractiveEffects() {
         card.addEventListener('mouseleave', resetCardTilt);
     });
 }
+  const toggle = document.querySelector('.menu-toggle');
+  const menu = document.querySelector('nav ul');
+
+  toggle.addEventListener('click', () => {
+    menu.classList.toggle('open');
+});
+
+
+
+
 
 function createRipple(e) {
     const button = e.currentTarget;
@@ -758,3 +768,13 @@ function debugInfo() {
     console.log('Pannellum disponível:', typeof pannellum !== 'undefined');
     console.log('Model Viewer disponível:', customElements.get('model-viewer') !== undefined);
 }
+
+document.addEventListener("DOMContentLoaded", function () {
+  const whatsappLink = document.querySelector('.whatsapp-link');
+  if (whatsappLink) {
+    const lang = document.documentElement.lang || "pt";
+    const message = whatsappLink.dataset[lang] || whatsappLink.dataset.pt;
+    const encoded = encodeURIComponent(message);
+    whatsappLink.href = `https://wa.me/5589994060505?text=${encoded}`;
+  }
+});
