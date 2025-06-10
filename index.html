@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lot Vision Studio - Sua arquitetura, nossa visão</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Importando o CSS do Pannellum -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pannellum@2.5.6/build/pannellum.css">
+
+    <!-- Importando seu CSS personalizado (opcional) -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+    <!-- Language Selector -->
+    <div class="language-selector">
+        <button class="lang-btn active" data-lang="pt">PT</button>
+        <button class="lang-btn" data-lang="en">EN</button>
+    </div>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <img src="assets/images/logo.png" alt="Lot Vision Studio">
+            </div>
+            <nav class="nav">
+                <a href="#home" class="nav-link" data-pt="Início" data-en="Home">Início</a>
+                <a href="#about" class="nav-link" data-pt="Sobre" data-en="About">Sobre</a>
+                <a href="#services" class="nav-link" data-pt="Serviços" data-en="Services">Serviços</a>
+                <a href="#process" class="nav-link" data-pt="Processo" data-en="Process">Processo</a>
+                <a href="#projects" class="nav-link" data-pt="Projetos" data-en="Projects">Projetos</a>
+                <a href="#contact" class="nav-link" data-pt="Contato" data-en="Contact">Contato</a>
+            </nav>
+            <div class="mobile-menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-background">
+            <img src="assets/images/modern_architecture_1.jpg" alt="Modern Architecture">
+        </div>
+        <div class="hero-content">
+            <h1 class="hero-title" data-pt="Sua Idéia, nossa visão." data-en="Your Dreams, our vision.">
+                Sua arquitetura, nossa visão.
+            </h1>
+            <p class="hero-subtitle" data-pt="Transformamos conceitos arquitetônicos em visualizações de tirar o fôlego"
+                data-en="We transform architectural concepts into breathtaking visualizations">
+                Transformamos conceitos arquitetônicos em visualizações de tirar o fôlego
+            </p>
+            <a href="#contact" class="cta-button" data-pt="Iniciar Projeto" data-en="Start Project">Iniciar Projeto</a>
+        </div>
+        <div class="scroll-indicator">
+            <div class="scroll-arrow"></div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title" data-pt="Quem Somos" data-en="Who We Are">Quem Somos</h2>
+                <div class="section-divider"></div>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <p data-pt="Na Lot Vision, transformamos conceitos arquitetônicos em visualizações de tirar o fôlego. Nossa missão é capturar a essência de cada projeto e traduzir ideias em imagens que inspiram e conectam."
+                        data-en="At Lot Vision, we transform architectural concepts into breathtaking visualizations. Our mission is to capture the essence of each project and translate ideas into images that inspire and connect.">
+                        Na Lot Vision, transformamos conceitos arquitetônicos em visualizações de tirar o fôlego. Nossa
+                        missão é capturar a essência de cada projeto e traduzir ideias em imagens que inspiram e
+                        conectam.
+                    </p>
+                    <p data-pt="Com uma equipe internacional e uma abordagem inovadora, exploramos referências globais para criar visualizações que vão além do comum. Nossa paixão por arquitetura e design nos motiva a entregar resultados com precisão técnica e apelo estético, valorizando cada detalhe do ambiente."
+                        data-en="With an international team and an innovative approach, we explore global references to create visualizations that go beyond the ordinary. Our passion for architecture and design motivates us to deliver results with technical precision and aesthetic appeal, valuing every detail of the environment.">
+                        Com uma equipe internacional e uma abordagem inovadora, exploramos referências globais para
+                        criar visualizações que vão além do comum. Nossa paixão por arquitetura e design nos motiva a
+                        entregar resultados com precisão técnica e apelo estético, valorizando cada detalhe do ambiente.
+                    </p>
+                </div>
+                <div class="about-image">
+                    <img src="assets/images/modern_architecture_2.jpg" alt="About Lot Vision">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services-section">
+        <div class="container">
+            <h2 class="section-title" data-pt="Serviços" data-en="Services">Serviços</h2>
+            <div class="service-grid">
+
+                <div class="service-item fade-in">
+                    <img src="assets/images/fachada.jpeg"alt="Ilustrações">
+                    <h3 data-pt="Ilustrações" data-en="Illustrations">Ilustrações</h3>
+                </div>
+
+                <div class="service-item fade-in">
+                    <img src="assets/images/humanizada01.jpg" alt="Plantas Humanizadas">
+                    <h3 data-pt="Plantas Humanizadas" data-en="Humanized Floor Plans">Plantas Humanizadas</h3>
+                </div>
+
+                <div class="service-item fade-in appear">
+                    <div id="panorama-360" style="width: 100%; height: 300px; border-radius: 8px; overflow: hidden;"></div>                    
+                    <h3 data-pt="Tour 360º" data-en="360° Virtual Tour">Tour 360º</h3>
+                </div>
+
+                <div class="service-item fade-in">
+                    <img src="assets/images/produto.jpg" alt="Plantas Humanizadas">
+                    <h3 data-pt="Imagens de Produto" data-en="Product Images">Imagens de Produto</h3>
+                </div>
+
+                <div class="service-item fade-in">
+                    <video controls loop muted autoplay playsinline>
+                        <source src="assets/videos/animation_loop.mp4" type="video/mp4">
+                        Seu navegador não suporta o elemento de vídeo.
+                    </video>
+                    <h3 data-pt="Vídeos" data-en="Movies">Vídeo</h3>
+                </div>
+
+                <div class="service-item fade-in">
+                    <model-viewer src="assets/models/armchair.glb" alt="Modelo 3D Interativo" auto-rotate
+                        camera-controls environment-image="neutral">
+                    </model-viewer>
+                    <h3 data-pt="Modelagem Personalizada" data-en="Custom Modeling">Modelagem Personalizada</h3>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Process Section -->
+    <section id="process" class="process">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title" data-pt="Nosso Processo" data-en="Our Process">Nosso Processo</h2>
+                <div class="section-divider"></div>
+            </div>
+            <div class="process-steps">
+                <div class="process-step">
+                    <div class="step-number">01</div>
+                    <h3 data-pt="Alinhamento Inicial" data-en="Initial Alignment">Alinhamento Inicial</h3>
+                    <p data-pt="Começamos entendendo suas necessidades e os objetivos do projeto e formalizamos nossa parceria com proposta e contrato."
+                        data-en="We start by understanding your needs and project objectives and formalize our partnership with a proposal and contract.">
+                        Começamos entendendo suas necessidades e os objetivos do projeto e formalizamos nossa parceria
+                        com proposta e contrato.
+                    </p>
+                </div>
+
+                <div class="process-step">
+                    <div class="step-number">02</div>
+                    <h3 data-pt="Preparação Técnica" data-en="Technical Preparation">Preparação Técnica</h3>
+                    <p data-pt="Organizamos todos os arquivos, reunimos referências, analisamos os materiais enviados e marcamos o Kick off e damos início ao cronograma."
+                        data-en="We organize all files, gather references, analyze submitted materials and schedule the kick-off to start the timeline.">
+                        Organizamos todos os arquivos, reunimos referências, analisamos os materiais enviados e marcamos
+                        o Kick off e damos início ao cronograma.
+                    </p>
+                </div>
+
+                <div class="process-step">
+                    <div class="step-number">03</div>
+                    <h3 data-pt="Criação da Cena Base" data-en="Base Scene Creation">Criação da Cena Base</h3>
+                    <p data-pt="Modelamos os ambientes em 3D com atenção ao volume, iluminação e composição, traduzindo o conceito desejado em imagens iniciais para validação."
+                        data-en="We model 3D environments with attention to volume, lighting and composition, translating the desired concept into initial images for validation.">
+                        Modelamos os ambientes em 3D com atenção ao volume, iluminação e composição, traduzindo o
+                        conceito desejado em imagens iniciais para validação.
+                    </p>
+                </div>
+
+                <div class="process-step">
+                    <div class="step-number">04</div>
+                    <h3 data-pt="Validação Intermediária" data-en="Intermediate Validation">Validação Intermediária</h3>
+                    <p data-pt="Apresentamos uma prévia para coleta de feedback. Essa etapa é essencial para garantir que estamos no caminho certo e evita retrabalhos."
+                        data-en="We present a preview for feedback collection. This stage is essential to ensure we're on the right track and avoid rework.">
+                        Apresentamos uma prévia para coleta de feedback. Essa etapa é essencial para garantir que
+                        estamos no caminho certo e evita retrabalhos.
+                    </p>
+                </div>
+
+                <div class="process-step">
+                    <div class="step-number">05</div>
+                    <h3 data-pt="Materiais e Realismo" data-en="Materials and Realism">Materiais e Realismo</h3>
+                    <p data-pt="Aplicamos texturas, materiais e luz com mais profundidade, buscando realismo e estética refinada. Você recebe uma nova prévia para ajustes finais."
+                        data-en="We apply textures, materials and lighting with more depth, seeking realism and refined aesthetics. You receive a new preview for final adjustments.">
+                        Aplicamos texturas, materiais e luz com mais profundidade, buscando realismo e estética
+                        refinada. Você recebe uma nova prévia para ajustes finais.
+                    </p>
+                </div>
+
+                <div class="process-step">
+                    <div class="step-number">06</div>
+                    <h3 data-pt="Finalização e Entrega" data-en="Finalization and Delivery">Finalização e Entrega</h3>
+                    <p data-pt="Após a aprovação, realizamos a renderização em alta resolução (4K) e entregamos o material final nas versões para uso profissional."
+                        data-en="After approval, we perform high-resolution rendering (4K) and deliver the final material in versions for professional use.">
+                        Após a aprovação, realizamos a renderização em alta resolução (4K) e entregamos o material final
+                        nas versões para uso profissional.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title" data-pt="Projetos de Destaque" data-en="Featured Projects">Projetos de
+                    Destaque</h2>
+                <div class="section-divider"></div>
+                <p class="section-subtitle"
+                    data-pt="Conheça alguns dos nossos trabalhos mais marcantes e os resultados alcançados"
+                    data-en="Discover some of our most remarkable works and the results achieved">
+                    Conheça alguns dos nossos trabalhos mais marcantes e os resultados alcançados
+                </p>
+            </div>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="assets/images/modern_architecture_3.jpg" alt="Rancho Bottura">
+                    </div>
+                    <div class="project-content">
+                        <h3 data-pt="Edificio Villa Mangue" data-en="Mangrove Residence">Edificio Villa Mangue</h3>
+                        <p data-pt="Projeto residencial de alto padrão com foco em sustentabilidade e integração com a natureza."
+                            data-en="High-end residential project focused on sustainability and integration with nature.">
+                            Projeto residencial de alto padrão com foco em sustentabilidade e integração com a natureza.
+                        </p>
+                        <div class="project-features">
+                            <span data-pt="Ilustrações 3D" data-en="3D Illustrations">Ilustrações 3D</span>
+                            <span data-pt="Tour Virtual" data-en="Virtual Tour">Tour Virtual</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="assets/images/modern_architecture_4.jpg" alt="Residência Alphaville">
+                    </div>
+                    <div class="project-content">
+                        <h3 data-pt="Residência BM" data-en="BM House">Residência BM</h3>
+                        <p data-pt="Casa moderna em condomínio fechado com design contemporâneo integrado."
+                            data-en="Modern house in gated community with integrated contemporary design.">
+                            Casa moderna em condomínio fechado com design contemporâneo integrado.
+                        </p>
+                        <div class="project-features">
+                            <span data-pt="Renderização" data-en="Rendering">Renderização </span>
+                            <span data-pt="Animações" data-en="Animations">Animações</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="assets/images/modern_architecture_5.jpg" alt="Residencial Ondas">
+                    </div>
+                    <div class="project-content">
+                        <h3 data-pt="Residencial Ondas" data-en="Waves Residence">Parceria
+                            Futura Arquitetura</h3>
+                        <p data-pt="Colaboração estratégica para desenvolvimento de projetos comerciais e residenciais."
+                            data-en="Strategic collaboration for commercial and residential project development.">
+                            Colaboração estratégica para desenvolvimento de projetos comerciais e residenciais.
+                        </p>
+                        <div class="project-features">
+                            <span data-pt="Animações" data-en="Animations">Animações</span>
+                            <span data-pt="Modelagem 3D" data-en="3D Modeling">Modelagem 3D</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title" data-pt="Vamos Conversar?" data-en="Let's Talk?">Vamos Conversar?</h2>
+                <div class="section-divider"></div>
+                <p class="section-subtitle" data-pt="Estamos prontos para transformar sua visão em realidade"
+                    data-en="We're ready to transform your vision into reality">
+                    Estamos prontos para transformar sua visão em realidade
+                </p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-form">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" required>
+                            <label for="name" data-pt="Seu nome" data-en="Your name">Seu nome</label>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" required>
+                            <label for="email" data-pt="E-mail" data-en="E-mail">E-mail</label>
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" id="phone" name="phone">
+                            <label for="phone" data-pt="Telefone" data-en="Phone">Telefone</label>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" name="message" required></textarea>
+                            <label for="message" data-pt="Sua mensagem" data-en="Your message">Sua mensagem</label>
+                        </div>
+                        <button type="submit" class="submit-btn" data-pt="Enviar" data-en="Send">Enviar</button>
+                    </form>
+                </div>
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>E-mail</h4>
+                            <p>lotvisionstudio@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fab fa-whatsapp"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>WhatsApp</h4>
+                            <p>(89) 99406-0505</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fab fa-instagram"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Instagram</h4>
+                            <p>@lotvisionstudio</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-globe"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Website</h4>
+                            <p>www.lotvisionstudio.com</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="assets/images/logo.png" alt="Lot Vision Studio">
+                </div>
+                <div class="footer-info">
+                    <p data-pt="Sua Idéia, nossa visão." data-en="Your dreams, our vision.">Sua arquitetura, nossa
+                        visão.</p>
+                    <p data-pt="Juntos, criamos o extraordinário." data-en="Together, we create the extraordinary.">
+                        Juntos, criamos o extraordinário.</p>
+                </div>
+                <div class="footer-social">
+                    <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Lot Vision Studio. <span data-pt="Todos os direitos reservados."
+                        data-en="All rights reserved.">Todos os direitos reservados.</span></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="assets/js/script.js"></script>
+
+    <!-- Model Viewer -->
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+
+
+    <!-- Aguarda o carregamento da página -->
+    <script>
+        window.addEventListener('load', function () {
+            setTimeout(function () {
+                try {
+                    console.log('Iniciando Tour 360º...');
+
+                    // Verifica se o elemento panorama-360 existe
+                    const container = document.getElementById('panorama-360');
+                    if (!container) {
+                        console.error('Elemento panorama-360 não encontrado');
+                        return;
+                    }
+
+                    // Verifica se o Pannellum está disponível
+                    if (typeof pannellum === 'undefined') {
+                        console.error('Pannellum não está disponível');
+                        showFallback();
+                        return;
+                    }
+
+                    console.log('Pannellum encontrado, criando viewer...');
+
+                    // Configuração do Pannellum
+                    pannellum.viewer('panorama-360', {
+                        "type": "equirectangular",
+                        "panorama": "assets/images/panorama.jpg",
+                        "autoLoad": true,
+                        "autoRotate": -2,
+                        "showControls": false,
+                        "showZoomCtrl": false,
+                        "showFullscreenCtrl": false,
+                        "hfov": 110,
+                        "pitch": 10,
+                        "yaw": 180
+                    });
+
+                } catch (error) {
+                    console.error('Erro ao criar o Pannellum:', error);
+                    showFallback();
+                }
+            }, 500);
+        });
+
+        // Função de fallback
+        function showFallback() {
+            const container = document.getElementById('panorama-360');
+            if (container) {
+                container.innerHTML = `
+                <div style="width: 100%; height: 300px; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+                            display: flex; align-items: center; justify-content: center; color: white; font-family: Arial, sans-serif; 
+                            border-radius: 8px;">
+                    <div style="text-align: center;">
+                        <i class="fas fa-cube" style="font-size: 3em; margin-bottom: 15px; opacity: 0.8;"></i>
+                        <br><strong>Tour 360º</strong>
+                        <br><small style="opacity: 0.8;">Carregando experiência imersiva...</small>
+                    </div>
+                </div>
+            `;
+            }
+        }
+    </script>
+
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/pannellum@2.5.6/build/pannellum.js"></script>
+    <script src="assets/js/panorama.js"></script>
+
+</body>
+
+</html>
