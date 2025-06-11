@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lot Vision - Sua Idéia, nossa visão.</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Importando o CSS do Pannellum -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pannellum@2.5.6/build/pannellum.css">
+
+    <!-- Importando seu CSS personalizado (opcional) -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+    <!-- Language Selector -->
+    <div class="language-selector">
+        <button class="lang-btn active" data-lang="pt">PT</button>
+        <button class="lang-btn" data-lang="en">EN</button>
+    </div>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <a href="#home" class="logo-link">
+                    <img src="assets/images/logo.png" alt="Logo" class="logo">
+                </a>
+            </div>
+            <nav class="nav">
+                <a href="#about" class="nav-link" data-pt="Sobre" data-en="About">Sobre</a>
+                <a href="#services" class="nav-link" data-pt="Serviços" data-en="Services">Serviços</a>
+                <a href="#process" class="nav-link" data-pt="Processo" data-en="Process">Processo</a>
+                <a href="#projects" class="nav-link" data-pt="Projetos" data-en="Projects">Projetos</a>
+                <a href="#contact" class="nav-link" data-pt="Contato" data-en="Contact">Contato</a>
+            </nav>
+            <div class="mobile-menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title" data-pt="Quem Somos" data-en="Who We Are">Quem Somos</h2>
+                <div class="section-divider"></div>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <p data-pt="Fundada por Renan Alisson — artista 3D e designer de interiores com mais de 8 anos de experiência —, a Lot Vision surgiu com a proposta de oferecer imagens arquitetônicas de alto nível, com foco em realismo, estética e narrativa visual.
+
+Ao longo de sua trajetória, Renan colaborou em projetos executados no Reino Unido, Canadá, Estados Unidos, Japão, Dubai, Espanha, Portugal e Alemanha. À frente da direção criativa do estúdio, ele combina domínio técnico e olhar sensível para transformar ideias em imagens que comunicam com clareza e impacto.
+
+Para Renan, cada imagem carrega uma história — e contar essa história com beleza e propósito é o que move o trabalho da Lot Vision."
+                        data-en="With an international team and an innovative approach, we explore global references to create visualizations that go beyond the ordinary. Our passion for architecture and design motivates us to deliver results with technical precision and aesthetic appeal, valuing every detail of the environment.">
+                        Com uma equipe internacional e uma abordagem inovadora, exploramos referências globais para
+                        criar visualizações que vão além do comum. Nossa paixão por arquitetura e design nos motiva a
+                        entregar resultados com precisão técnica e apelo estético, valorizando cada detalhe do ambiente.
+                    </p>
+                </div>
+                <div class="about-image">
+                    <img src="/assets/images/about01.jpg" alt="About Lot Vision">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Equipe -->
+    <section id="people" class="people">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title" data-pt="Equipe" data-en="Featured Projects">Equipe</h2>
+                <div class="section-divider"></div>
+                <p class="section-subtitle"
+                    data-pt="Ao longo dessa trajetória, Renan teve a oportunidade de conhecer e trabalhar com alguns dos melhores artistas do segmento.
+                    Hoje, parte desses talentos — espalhados por quatro países — compõe a equipe da Lot Vision, formada por profissionais altamente qualificados, incluindo artistas de animação e VFX, especialistas em realidade virtual, modelagem hardsurface, arquitetos, designers e gerentes de projeto.
+                    Essa diversidade garante uma equipe preparada para atender com excelência qualquer desafio e projeto."
+                    data-en="Discover some of our most remarkable works and the results achieved">
+                    Conheça alguns dos nossos trabalhos mais marcantes e os resultados alcançados
+                </p>
+            </div>
+            <Div>
+                <div class="projects-grid">
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="assets/images/renan.png" alt="Rancho Bottura">
+                        </div>
+                        <div class="project-content">
+                            <h3 data-pt="Renan" data-en="Mangrove Residence">Edificio Villa Mangue</h3>
+                            <p data-pt="Fundador & Diretor Criativo"
+                                data-en="High-end residential project focused on sustainability and integration with nature.">
+                                Projeto residencial de alto padrão com foco em sustentabilidade e integração com a
+                                natureza.
+                            </p>
+
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="assets/images/luana.png" alt="Residência Alphaville">
+                        </div>
+                        <div class="project-content">
+                            <h3 data-pt="Luana" data-en="BM House">Residência BM</h3>
+                            <p data-pt="Diretora Comercial"
+                                data-en="Modern house in gated community with integrated contemporary design.">
+                                Casa moderna em condomínio fechado com design contemporâneo integrado.
+                            </p>
+
+                        </div>
+                    </div>
+                </div>
+            </Div>
+        </div>
+    </section>
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title" data-pt="Vamos Conversar?" data-en="Let's Talk?">Vamos Conversar?</h2>
+                <div class="section-divider"></div>
+                <p class="section-subtitle" data-pt="Estamos prontos para transformar sua visão em realidade"
+                    data-en="We're ready to transform your vision into reality">
+                    Estamos prontos para transformar sua visão em realidade
+                </p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-form">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" required>
+                            <label for="name" data-pt="Seu nome" data-en="Your name">Seu nome</label>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" required>
+                            <label for="email" data-pt="E-mail" data-en="E-mail">E-mail</label>
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" id="phone" name="phone">
+                            <label for="phone" data-pt="Telefone" data-en="Phone">Telefone</label>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" name="message" required></textarea>
+                            <label for="message" data-pt="Sua mensagem" data-en="Your message">Sua mensagem</label>
+                        </div>
+                        <button type="submit" class="submit-btn" data-pt="Enviar" data-en="Send">Enviar</button>
+                    </form>
+                </div>
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>E-mail</h4>
+                            <p>lotvisionstudio@gmail.com</p>
+                        </div>
+                    </div>
+
+                    <a href="https://wa.me/5589994060505?text=Olá%2C%20gostaria%20de%20iniciar%20um%20projeto%20com%20vocês."
+                        target="_blank" class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fab fa-whatsapp"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>WhatsApp</h4>
+                            <p>(89) 99406-0505</p>
+                        </div>
+                    </a>
+
+                    <a href="https://www.instagram.com/lotvision" target="_blank" class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fab fa-instagram"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Instagram</h4>
+                            <p>@lotvision</p>
+                        </div>
+                    </a>
+
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-globe"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Website</h4>
+                            <p>www.lotvisionstudio.com</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="assets/images/logo.png" alt="Lot Vision Studio">
+                </div>
+                <div class="footer-info">
+                    <p data-pt="Sua Idéia, nossa visão." data-en="Your dreams, our vision.">Sua arquitetura, nossa
+                        visão.</p>
+                    <p data-pt="Juntos, criamos o extraordinário." data-en="Together, we create the extraordinary.">
+                        Juntos, criamos o extraordinário.</p>
+                </div>
+                <div class="footer-social">
+                    <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Lot Vision Studio. <span data-pt="Todos os direitos reservados."
+                        data-en="All rights reserved.">Todos os direitos reservados.</span></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="assets/js/script.js"></script>
+
+    <!-- Model Viewer -->
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+
+
+    <!-- Aguarda o carregamento da página -->
+    <script>
+        window.addEventListener('load', function () {
+            setTimeout(function () {
+                try {
+                    console.log('Iniciando Tour 360º...');
+
+                    // Verifica se o elemento panorama-360 existe
+                    const container = document.getElementById('panorama-360');
+                    if (!container) {
+                        console.error('Elemento panorama-360 não encontrado');
+                        return;
+                    }
+
+                    // Verifica se o Pannellum está disponível
+                    if (typeof pannellum === 'undefined') {
+                        console.error('Pannellum não está disponível');
+                        showFallback();
+                        return;
+                    }
+
+                    console.log('Pannellum encontrado, criando viewer...');
+
+                    // Configuração do Pannellum
+                    pannellum.viewer('panorama-360', {
+                        "type": "equirectangular",
+                        "panorama": "assets/images/panorama.jpg",
+                        "autoLoad": true,
+                        "autoRotate": -2,
+                        "showControls": false,
+                        "showZoomCtrl": false,
+                        "showFullscreenCtrl": false,
+                        "hfov": 110,
+                        "pitch": 10,
+                        "yaw": 180
+                    });
+
+                } catch (error) {
+                    console.error('Erro ao criar o Pannellum:', error);
+                    showFallback();
+                }
+            }, 500);
+        });
+
+        // Função de fallback
+        function showFallback() {
+            const container = document.getElementById('panorama-360');
+            if (container) {
+                container.innerHTML = `
+                <div style="width: 100%; height: 300px; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+                            display: flex; align-items: center; justify-content: center; color: white; font-family: Arial, sans-serif; 
+                            border-radius: 8px;">
+                    <div style="text-align: center;">
+                        <i class="fas fa-cube" style="font-size: 3em; margin-bottom: 15px; opacity: 0.8;"></i>
+                        <br><strong>Tour 360º</strong>
+                        <br><small style="opacity: 0.8;">Carregando experiência imersiva...</small>
+                    </div>
+                </div>
+            `;
+            }
+        }
+    </script>
+
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/pannellum@2.5.6/build/pannellum.js"></script>
+    <script src="assets/js/panorama.js"></script>
+
+</body>
+
+</html>
