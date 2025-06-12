@@ -252,102 +252,37 @@ class FormHandler {
     init() {
         const form = document.getElementById('contactForm');
         if (form) {
-            form.addEventListener('submit', this.handleSubmit.bind(this));
+            // Nenhum listener de submit aqui — envio é feito diretamente pelo HTML/Formspree
         }
 
-        // Add floating label effect
+        // Configura os labels flutuantes
         this.setupFloatingLabels();
     }
 
     setupFloatingLabels() {
         const formGroups = document.querySelectorAll('.form-group');
-        
+
         formGroups.forEach(group => {
             const input = group.querySelector('input, textarea');
             const label = group.querySelector('label');
-            
+
             if (input && label) {
                 input.addEventListener('focus', () => {
                     group.classList.add('focused');
                 });
-                
+
                 input.addEventListener('blur', () => {
                     if (!input.value) {
                         group.classList.remove('focused');
                     }
                 });
-                
-                // Check if input has value on load
+
+                // Caso já tenha valor ao carregar (ex: preenchido automaticamente)
                 if (input.value) {
                     group.classList.add('focused');
                 }
             }
         });
-    }
-
-    async handleSubmit(e) {
-        e.preventDefault();
-        
-        const form = e.target;
-        const formData = new FormData(form);
-        const submitBtn = form.querySelector('.submit-btn');
-        
-        // Show loading state
-        const originalText = submitBtn.textContent;
-        submitBtn.textContent = this.getCurrentLang() === 'pt' ? 'Enviando...' : 'Sending...';
-        submitBtn.disabled = true;
-        
-        try {
-            // Here you would typically send the form data to your server
-            // For now, we'll simulate a successful submission
-            await this.simulateFormSubmission(formData);
-            
-            // Show success message
-            this.showMessage(
-                this.getCurrentLang() === 'pt' 
-                    ? 'Mensagem enviada com sucesso!' 
-                    : 'Message sent successfully!',
-                'success'
-            );
-            
-            form.reset();
-            
-        } catch (error) {
-            // Show error message
-            this.showMessage(
-                this.getCurrentLang() === 'pt' 
-                    ? 'Erro ao enviar mensagem. Tente novamente.' 
-                    : 'Error sending message. Please try again.',
-                'error'
-            );
-        } finally {
-            // Reset button
-            submitBtn.textContent = originalText;
-            submitBtn.disabled = false;
-        }
-    }
-
-    simulateFormSubmission(formData) {
-        return new Promise((resolve) => {
-            setTimeout(resolve, 2000);
-        });
-    }
-
-    showMessage(text, type) {
-        const message = document.createElement('div');
-        message.className = `form-message ${type}`;
-        message.textContent = text;
-        
-        const form = document.getElementById('contactForm');
-        form.appendChild(message);
-        
-        setTimeout(() => {
-            message.remove();
-        }, 5000);
-    }
-
-    getCurrentLang() {
-        return document.querySelector('.lang-btn.active')?.dataset.lang || 'pt';
     }
 }
 
