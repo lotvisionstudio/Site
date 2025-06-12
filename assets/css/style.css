@@ -10,13 +10,18 @@ html {
 }
 
 body {
-    font-family: 'Inter', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     line-height: 1.6;
     color: #ffffff;
     background-color: #000000;
     overflow-x: hidden;
 }
-
+.hero-title {
+    font-family: 'Oswald', sans-serif;
+}
+.section-title{
+    font-family: 'Oswald', sans-serif;
+}
 .container {
     max-width: 1200px;
     margin: 0 auto;
@@ -93,6 +98,7 @@ body {
     
 }
 .nav {
+    
     display: flex;
     gap: 30px;
 }
