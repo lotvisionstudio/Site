@@ -8,6 +8,9 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&display=swap" rel="stylesheet">
+
 
     <!-- Importando o CSS do Pannellum -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pannellum@2.5.6/build/pannellum.css">
@@ -296,24 +299,25 @@
             </div>
             <div class="contact-content">
                 <div class="contact-form">
-                    <form id="contactForm">
+                    <form action="https://formspree.io/f/mpwrddav" method="POST" id="contactForm">
                         <div class="form-group">
-                            <input type="text" id="name" name="name" required>
+                            <input type="text" name="name" id="name" required>
                             <label for="name" data-pt="Seu nome" data-en="Your name">Seu nome</label>
                         </div>
                         <div class="form-group">
-                            <input type="email" id="email" name="email" required>
+                            <input type="email" name="email" id="email" required>
                             <label for="email" data-pt="E-mail" data-en="E-mail">E-mail</label>
                         </div>
                         <div class="form-group">
-                            <input type="tel" id="phone" name="phone">
+                            <input type="tel" name="phone" id="phone" required>
                             <label for="phone" data-pt="Telefone" data-en="Phone">Telefone</label>
                         </div>
                         <div class="form-group">
-                            <textarea id="message" name="message" required></textarea>
+                            <textarea name="message" id="message" required></textarea>
                             <label for="message" data-pt="Sua mensagem" data-en="Your message">Sua mensagem</label>
                         </div>
                         <button type="submit" class="submit-btn" data-pt="Enviar" data-en="Send">Enviar</button>
+                        <div id="form-response" style="margin-top: 10px; font-weight: 600;"></div>
                     </form>
                 </div>
                 <div class="contact-info">
@@ -347,20 +351,44 @@
                             <p>@lotvision</p>
                         </div>
                     </a>
-
-                    <div class="contact-item">
-                        <div class="contact-icon">
-                            <i class="fas fa-globe"></i>
-                        </div>
-                        <div class="contact-details">
-                            <h4>Website</h4>
-                            <p>www.lotvisionstudio.com</p>
-                        </div>
-                    </div>
                 </div>
             </div>
         </div>
     </section>
+
+    <script>
+        const form = document.getElementById('contactForm');
+        const responseDiv = document.getElementById('form-response');
+
+        form.addEventListener('submit', async (event) => {
+            event.preventDefault(); // evita o envio tradicional e o reload da página
+
+            const formData = new FormData(form);
+
+            try {
+                const response = await fetch(form.action, {
+                    method: 'POST',
+                    body: formData,
+                    headers: {
+                        'Accept': 'application/json'
+                    }
+                });
+
+                if (response.ok) {
+                    responseDiv.style.color = 'green';
+                    responseDiv.textContent = 'Mensagem enviada com sucesso! Obrigado pelo contato.';
+                    form.reset();
+                } else {
+                    const errorData = await response.json();
+                    responseDiv.style.color = 'red';
+                    responseDiv.textContent = errorData.error || 'Erro ao enviar a mensagem. Tente novamente.';
+                }
+            } catch (error) {
+                responseDiv.style.color = 'red';
+                responseDiv.textContent = 'Erro ao enviar a mensagem. Verifique sua conexão.';
+            }
+        });
+    </script>
 
 
     <!-- Footer -->
